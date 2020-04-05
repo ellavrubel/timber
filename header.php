@@ -16,18 +16,18 @@
 
 <body>
 
-<header class="header" style="background-image: url(img/header/header_bg.png);">
+<header class="header"> <!--style="background-image: url(img/header/header_bg.png);"-->
 
     <div class="header__inner">
         <img src=" <?php bloginfo( 'template_url' ); ?>/assets/img/header/small_house.png" alt="logo">
         <div class="header__name">
-TIMBER HOUSE
-</div>
-        <a class="phone" href="tel:+75754565634"> +7 (575) 456-56-34 </a>
+            <?php the_field('header__name'); ?>
+            </div>
+        <a class="phone" href="<?php the_field('phone'); ?>"> <?php the_field('phone'); ?> </a>
 
         <div class="header__title">
-дома из бруса под ключ
-</div>
+            <?php the_field('header__title'); ?>
+            </div>
         <div class="header__sale">
             <img src="img/header/header_gift.png" alt="">
         </div>

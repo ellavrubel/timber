@@ -2,7 +2,7 @@
 
 <footer class="footer">
     <div class="container">
-    <a class="phone" href="tel:+75754565634"> +7 (575) 456-56-34 </a>
+    <a class="phone" href="<?php the_field('phone'); ?>"> <?php the_field('phone'); ?> </a>
     <div class="footer__email">house@house.ru</div>
     </div>
 </footer>
