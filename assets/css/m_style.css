@@ -1,0 +1,163 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%;}
+input, button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.container{
+    max-width: 1030px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    padding: 120px 0 0 155px;
+}
+.header__inner{
+    text-align: center;
+    width: 486px;
+    height: 486px;
+    border-radius: 50%;
+    border: 10px solid #f4d4a5;
+    background-color: #fff;
+    padding: 13px 0 160px;
+
+}
+.header__name{
+    padding-top: 5px;
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color:#bf4200 ;
+    margin-bottom: 15px;
+}
+
+.phone{
+    font-weight: 300;
+    font-size: 35px;
+    color: #000;
+
+}
+.header__title{
+    font-size: 50px;
+    font-weight: 700;
+    color: #1fad26;
+    text-transform: uppercase;
+    margin: 47px 0 40px;
+}
+.main{
+    text-align: center;
+}
+.main__title{
+    color: #d07a2d;
+    font-size: 40px;
+    margin: 80px auto;
+    max-width: 800px;
+}
+.main__text{
+    font-size: 30px;
+}
+.main__img{
+    margin: 90px auto;
+}
+.project__title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 100px;
+    color: #d0662d;
+}
+.project__name{
+    font-weight: 700;
+    font-size: 32px;
+}
+.project__images{
+    margin-top: 42px;
+}
+
+.download{
+    margin: 150px 0 90px;
+    background-color: #f1dfbc;
+    padding: 44px 0;
+}
+
+.download img{
+    display: block;
+    margin: 0 auto;
+}
+
+.download a{
+    display: inline-block;
+    width: 350px;
+    color: #fff;
+    border: 3px solid #effd15;
+    padding: 10px 0;
+    background-color: #17753b;
+}
+
+.gallery__title{
+    font-weight: 700;
+    font-size: 41px;
+    color: #d07a2d;
+    margin-bottom: 40px;
+}
+
+.gallery__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.footer{
+    text-align: center;
+}
+.footer .phone{
+    font-weight: 700;
+}
+
+.footer__email{
+    margin: 90px 0 150px;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: #2f8bc5;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
