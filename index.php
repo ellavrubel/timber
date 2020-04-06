@@ -6,13 +6,12 @@
 <main class="main">
   <div class="container">
     <div class="main__title">
-Строительство домов и бань из строганного и профилированного бруса
+        <?php the_field('main__title'); ?>
 </div>
     <div class="main__text">
-За 10 лет мы возвели более 250 домов и бань из бруса
-        ИМЕЕМ БОЛЬШОЙ ОПЫТ В СТРОИТЕЛЬСТВЕ
-        гарантируем качество и надежность всех построенных нами объектов
-        ГАРАНТИЯ НА ДОМА И БАНИ ИЗ БРУСА 3 ГОДА
+
+        <?php the_field('main__text'); ?>
+
 </div>
 
     <div class="main__img">
@@ -63,31 +62,22 @@
 
         <div class="download">
             <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/small_house.png" alt="">
-            <a href="">СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
+            <div class="download__link">
+            <a href="<?php the_field('download__link'); ?>" download="">СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
+            </div>
         </div>
 
 
         <div class="container">
         <div class="gallery">
             <div class="gallery__title">
-ФОТОГРАФИИ НАШИХ РАБОТ
-</div>
+                <?php the_field('gallery__title'); ?>
+            </div>
             <div class="gallery__text">
-некоторые фотографии построенных нами домов и бань из бруса
-</div>
+                <?php the_field('gallery__text'); ?>
+            </div>
             <div class="gallery__inner">
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-                <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
+                <?php the_field('photos'); ?>
             </div>
         </div>
 

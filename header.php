@@ -16,7 +16,7 @@
 
 <body>
 
-<header class="header"> <!--style="background-image: url(img/header/header_bg.png);"-->
+<header class="header" style="background-image: url(<?php the_field('header'); ?>);">
 
     <div class="header__inner">
         <img src=" <?php bloginfo( 'template_url' ); ?>/assets/img/header/small_house.png" alt="logo">
@@ -28,9 +28,11 @@
         <div class="header__title">
             <?php the_field('header__title'); ?>
             </div>
+
         <div class="header__sale">
-            <img src="img/header/header_gift.png" alt="">
+            <img src="<?php the_field('header__sale'); ?>" alt="">
         </div>
+
     </div>
 
 

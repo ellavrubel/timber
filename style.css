@@ -79,6 +79,7 @@ body{
 }
 .main__text{
     font-size: 30px;
+    letter-spacing: -1px;
 }
 .main__img{
     margin: 90px auto;
@@ -127,7 +128,15 @@ body{
 .gallery__inner{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin: 0;
+}
+#gallery-1.gallery .gallery-item {
+    margin-top: 0;
+}
+
+#gallery-1 .gallery-item img {
+    border: none;
+    display: block;
 }
 
 .footer{
@@ -143,6 +152,12 @@ body{
     font-weight: 300;
     color: #2f8bc5;
     font-size: 30px;
+
+}
+.footer__email span{
+    display: inline-block;
+    border-bottom: 1px solid #2f8bc5;
+    padding-bottom: 2px;
 }
 
 
