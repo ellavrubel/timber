@@ -19,45 +19,44 @@
     </div>
 
     <div class="project">
+
         <div class="project__title">
-ПРОЕКТЫ ДОМОВ ИЗ БРУСА
-</div>
-        <div class="project__item">
-            <div class="project__name">ДОМ #1</div>
-            <div class="project__size">Размер дома: 6 x 6</div>
-            <div class="project__area">Общая площадь дома: 54 кв. м </div>
-            <div class="project__price">Стоимость - 402 000 рублей </div>
-
-            <div class="project__images">
-                <div class="project__images-item"><img src="img/set3/set3_house.png" alt=""></div>
-                <div class="project__images-item"><img src="img/plan.png" alt=""></div>
-            </div>
+            <?php the_field('project__title'); ?>
         </div>
 
-        <div class="project__item">
-            <div class="project__name">ДОМ #2</div>
-            <div class="project__size">Размер дома: 6 x 6</div>
-            <div class="project__area">Общая площадь дома: 54 кв. м </div>
-            <div class="project__price">Стоимость - 402 000 рублей </div>
+            <?php
 
-            <div class="project__images">
-                <div class="project__images-item"><img src="img/set3/set3_house.png" alt=""></div>
-                <div class="project__images-item"><img src="img/plan2.png" alt=""></div>
-            </div>
-        </div>
+            $posts = get_field('project__item');
 
-        <div class="project__item">
-            <div class="project__name">ДОМ #3</div>
-            <div class="project__size">Размер дома: 6 x 6</div>
-            <div class="project__area">Общая площадь дома: 54 кв. м </div>
-            <div class="project__price">Стоимость - 402 000 рублей </div>
+            if( $posts ): ?>
+                <ul>
+                    <?php foreach( $posts as $post):  ?>
+                        <?php setup_postdata($post); ?>
 
-            <div class="project__images">
-                <div class="project__images-item"><img src="img/house3.png" alt=""></div>
-                <div class="project__images-item"><img src="img/plan3.png" alt=""></div>
-            </div>
-        </div>
+                        <li class="project__item">
+
+                            <div class="project__name"><?php the_field('project__name'); ?></div>
+                            <div class="project__size"><?php the_field('project__size'); ?></div>
+                            <div class="project__area"><?php the_field('project__area'); ?></div>
+                            <div class="project__price"><?php the_field('project__price'); ?> </div>
+
+                            <div class="project__images">
+
+                               <div class="project__images-item"><img src="<?php the_field('project__images-item-1'); ?>" alt=""></div>
+                               <div class="project__images-item"><img src="<?php the_field('project__images-item-2'); ?>" alt=""></div>
+
+                            </div>
+                        </li>
+
+                    <?php endforeach; ?>
+                </ul>
+
+                <?php wp_reset_postdata();?>
+
+            <?php endif; ?>
+
     </div>
+
   </div>
 
         <div class="download">
